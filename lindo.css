@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    background-color: #f0f4f8;
+}
+
+header{
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+header .logo{
+    height: 100px;
+    display: flex;
+    margin-left: 10px;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav li{
+    margin: 30px;
+}
+
+header nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+header h2{
+    align-items: center;
+    display: flex;
+}
+
+.sobre{
+    text-align: justify;
+    padding: 50px;
+    border-bottom: 1px solid black;
+}
+
+.sobre h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre p{
+    margin-bottom: 10px;
+}
+
+.skins{
+    display: flex;
+    text-align: center;
+}
+
+.skins h2{
+    margin-bottom: 30px;
+}
+
+.skins .imagens{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center; /* Centraliza as imagens horizontalmente */
+    margin: 10px;
+}
+
+.skins .imagens img {
+    width: 200%; /* As imagens ocuparão 100% da largura da célula da grid */
+    height: 200%; /* As imagens ocuparão 100% da altura da célula da grid */
+    object-fit: cover; /* Garante que a imagem se ajuste à célula sem distorcer */
+}
