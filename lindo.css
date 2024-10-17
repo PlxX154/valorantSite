@@ -61,8 +61,8 @@ header h2{
 }
 
 .skins{
-    display: flex;
     text-align: center;
+    padding: 50px 0;
 }
 
 .skins h2{
@@ -79,7 +79,97 @@ header h2{
 }
 
 .skins .imagens img {
-    width: 200%; /* As imagens ocuparão 100% da largura da célula da grid */
-    height: 200%; /* As imagens ocuparão 100% da altura da célula da grid */
+    width: 100%; /* As imagens ocuparão 100% da largura da célula da grid */
+    height: 100%; /* As imagens ocuparão 100% da altura da célula da grid */
     object-fit: cover; /* Garante que a imagem se ajuste à célula sem distorcer */
 }
+
+.precos{
+    padding: 50px;
+}
+
+.precos h2{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.precos table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.precos, .precos th, .precos td{
+    border: 1px solid #305f72;
+}
+.precos th{
+    background-color: red;
+}
+
+.precos th, .precos td{
+    text-align: center;
+    padding: 3px;
+}
+
+.precos tr:nth-child(odd){
+
+    background-color: beige;
+}
+
+.precos tr:nth-child(even){
+    background-color: bisque;
+}
+
+.contato{
+    padding: 50px;
+}
+
+.contato h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contato form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contato label{
+    margin-bottom: 10px;
+}
+
+.contato textarea{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.contato button {
+    padding: 10px;
+    background-color: #557a83; /* Borda azul médio */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contato button:hover{
+    background-color: gray;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+}
+
+footer p{
+    color: white;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
